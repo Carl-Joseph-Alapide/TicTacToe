@@ -6,6 +6,7 @@ namespace TicTacToe
         public TicTacToe()
         {
             InitializeComponent();
+            BGM();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -127,6 +128,17 @@ namespace TicTacToe
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Pcb1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void BGM()
+        {
+           System.Media.SoundPlayer Player = new System.Media.SoundPlayer();
+            Player.SoundLocation = "bgm.wav";
+            Player.PlayLooping();
         }
     }
 }

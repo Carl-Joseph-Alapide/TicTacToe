@@ -42,6 +42,8 @@
             this.lblversion = new System.Windows.Forms.Label();
             this.lblturn = new System.Windows.Forms.Label();
             this.btnexit = new System.Windows.Forms.Button();
+            this.Pcb1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Pcb1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnL1
@@ -182,11 +184,27 @@
             this.btnexit.UseVisualStyleBackColor = true;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
+            // Pcb1
+            // 
+            this.Pcb1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.Pcb1.BackColor = System.Drawing.Color.Transparent;
+            this.Pcb1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.Pcb1.Image = ((System.Drawing.Image)(resources.GetObject("Pcb1.Image")));
+            this.Pcb1.Location = new System.Drawing.Point(440, 9);
+            this.Pcb1.Name = "Pcb1";
+            this.Pcb1.Size = new System.Drawing.Size(166, 112);
+            this.Pcb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Pcb1.TabIndex = 13;
+            this.Pcb1.TabStop = false;
+            this.Pcb1.Click += new System.EventHandler(this.Pcb1_Click);
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(606, 316);
+            this.Controls.Add(this.Pcb1);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.lblturn);
             this.Controls.Add(this.lblversion);
@@ -201,11 +219,13 @@
             this.Controls.Add(this.btnC1);
             this.Controls.Add(this.btnL1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TicTacToe";
             this.Text = "TicTacToe";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Pcb1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +246,6 @@
         private Label lblversion;
         private Label lblturn;
         private Button btnexit;
+        private PictureBox Pcb1;
     }
 }
