@@ -83,12 +83,46 @@ namespace TicTacToe
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-
+            //re-enable the buttons
+            btnL1.Enabled = true;
+            btnL2.Enabled = true;
+            btnL3.Enabled = true;
+            btnC1.Enabled = true;
+            btnC2.Enabled = true;
+            btnC3.Enabled = true;
+            btnR1.Enabled = true;
+            btnR2.Enabled = true;
+            btnR3.Enabled = true;
+            //reset the text on buttons
+            btnL1.Text = "";
+            btnL2.Text = "";
+            btnL3.Text = "";
+            btnC1.Text = "";
+            btnC2.Text = "";
+            btnC3.Text = "";
+            btnR1.Text = "";
+            btnR2.Text = "";
+            btnR3.Text = "";
         }
 
         private void lblturn_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -39,8 +39,9 @@
             this.btnC3 = new System.Windows.Forms.Button();
             this.btnL3 = new System.Windows.Forms.Button();
             this.btnNewgame = new System.Windows.Forms.Button();
-            this.lblver = new System.Windows.Forms.Label();
+            this.lblversion = new System.Windows.Forms.Label();
             this.lblturn = new System.Windows.Forms.Label();
+            this.btnexit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnL1
@@ -144,7 +145,7 @@
             // 
             // btnNewgame
             // 
-            this.btnNewgame.Location = new System.Drawing.Point(256, 281);
+            this.btnNewgame.Location = new System.Drawing.Point(210, 272);
             this.btnNewgame.Name = "btnNewgame";
             this.btnNewgame.Size = new System.Drawing.Size(75, 23);
             this.btnNewgame.TabIndex = 9;
@@ -152,14 +153,14 @@
             this.btnNewgame.UseVisualStyleBackColor = true;
             this.btnNewgame.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // lblver
+            // lblversion
             // 
-            this.lblver.AutoSize = true;
-            this.lblver.Location = new System.Drawing.Point(525, 292);
-            this.lblver.Name = "lblver";
-            this.lblver.Size = new System.Drawing.Size(69, 15);
-            this.lblver.TabIndex = 10;
-            this.lblver.Text = "Version 1.12";
+            this.lblversion.AutoSize = true;
+            this.lblversion.Location = new System.Drawing.Point(525, 292);
+            this.lblversion.Name = "lblversion";
+            this.lblversion.Size = new System.Drawing.Size(69, 15);
+            this.lblversion.TabIndex = 10;
+            this.lblversion.Text = "Version 1.12";
             // 
             // lblturn
             // 
@@ -171,13 +172,24 @@
             this.lblturn.Text = "X turn";
             this.lblturn.Click += new System.EventHandler(this.lblturn_Click);
             // 
+            // btnexit
+            // 
+            this.btnexit.Location = new System.Drawing.Point(300, 272);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(75, 23);
+            this.btnexit.TabIndex = 12;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 316);
+            this.Controls.Add(this.btnexit);
             this.Controls.Add(this.lblturn);
-            this.Controls.Add(this.lblver);
+            this.Controls.Add(this.lblversion);
             this.Controls.Add(this.btnNewgame);
             this.Controls.Add(this.btnR3);
             this.Controls.Add(this.btnC3);
@@ -211,7 +223,8 @@
         private Button btnC3;
         private Button btnL3;
         private Button btnNewgame;
-        private Label lblver;
+        private Label lblversion;
         private Label lblturn;
+        private Button btnexit;
     }
 }
