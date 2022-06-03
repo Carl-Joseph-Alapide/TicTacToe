@@ -103,6 +103,10 @@ namespace TicTacToe
             btnR1.Text = "";
             btnR2.Text = "";
             btnR3.Text = "";
+            //Always reset the turn to X
+            x_turn = true;
+            //Always reset the turn label to X
+            lblturn.Text = "X Turn";
         }
 
         private void lblturn_Click(object sender, EventArgs e)
