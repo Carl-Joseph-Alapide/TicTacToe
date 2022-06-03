@@ -2,6 +2,7 @@ namespace TicTacToe
 {
     public partial class TicTacToe : Form
     { Boolean x_turn= true;
+
         public TicTacToe()
         {
             InitializeComponent();
@@ -9,31 +10,16 @@ namespace TicTacToe
 
         private void button1_Click(object sender, EventArgs e)
         {
-        //first click is true
+
+        Button All = (Button)sender;    //tried to synchronize the buttons
             if (x_turn)
-                btnL1.Text = "X";
+                All.Text = "X";
             else
-                btnL1.Text = "O";
-        x_turn = false; 
+                All.Text = "O";
           
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
 
         }
