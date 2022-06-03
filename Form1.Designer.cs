@@ -40,6 +40,7 @@
             this.btnL3 = new System.Windows.Forms.Button();
             this.btnNewgame = new System.Windows.Forms.Button();
             this.lblver = new System.Windows.Forms.Label();
+            this.lblturn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnL1
@@ -160,11 +161,22 @@
             this.lblver.TabIndex = 10;
             this.lblver.Text = "Version 1.12";
             // 
+            // lblturn
+            // 
+            this.lblturn.AutoSize = true;
+            this.lblturn.Location = new System.Drawing.Point(274, 9);
+            this.lblturn.Name = "lblturn";
+            this.lblturn.Size = new System.Drawing.Size(39, 15);
+            this.lblturn.TabIndex = 11;
+            this.lblturn.Text = "X turn";
+            this.lblturn.Click += new System.EventHandler(this.lblturn_Click);
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 316);
+            this.Controls.Add(this.lblturn);
             this.Controls.Add(this.lblver);
             this.Controls.Add(this.btnNewgame);
             this.Controls.Add(this.btnR3);
@@ -200,5 +212,6 @@
         private Button btnL3;
         private Button btnNewgame;
         private Label lblver;
+        private Label lblturn;
     }
 }
