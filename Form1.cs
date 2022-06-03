@@ -49,8 +49,10 @@ namespace TicTacToe
             //diagonal winner
             else if ((btnL1.Text == btnC2.Text) && (btnC2.Text == btnR3.Text) && (!btnL1.Enabled) && (!btnC2.Enabled) && (!btnR3.Enabled))
                 winner = true;
-            else if ((btnR1.Text == btnC2.Text) && (btnC2.Text == btnL3.Text) && (!btnR1.Enabled) && (!btnC2.Enabled) && (!btnL3.Enabled)) 
+            else if ((btnR1.Text == btnC2.Text) && (btnC2.Text == btnL3.Text) && (!btnR1.Enabled) && (!btnC2.Enabled) && (!btnL3.Enabled))
                 winner = true;
+            else if ((!btnL1.Enabled) && (!btnL2.Enabled) && (!btnL3.Enabled) && (!btnC1.Enabled) && (!btnC2.Enabled) && (!btnC3.Enabled) && (!btnR1.Enabled) && (!btnR2.Enabled) && (!btnR3.Enabled))
+                MessageBox.Show("Draw", "Good Game");
 
             if (winner)
                 if (x_turn)
