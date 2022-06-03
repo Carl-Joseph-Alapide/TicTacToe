@@ -26,6 +26,7 @@ namespace TicTacToe
                 lblturn.Text = "O Turn";
 
             Results();
+            
         }
         private void Results()
         {
@@ -53,16 +54,31 @@ namespace TicTacToe
                 winner = true;
             else if ((!btnL1.Enabled) && (!btnL2.Enabled) && (!btnL3.Enabled) && (!btnC1.Enabled) && (!btnC2.Enabled) && (!btnC3.Enabled) && (!btnR1.Enabled) && (!btnR2.Enabled) && (!btnR3.Enabled))
                 MessageBox.Show("Draw", "Good Game");
-
             if (winner)
+            {
+                Disable_the_remaining_buttons();
                 if (x_turn)
                     MessageBox.Show("The winner is O", "Congratulations");
                 else
                     MessageBox.Show("The winner is X", "Congratulations");
+            }
         }
+        private void Disable_the_remaining_buttons()
+        {
+            btnL1.Enabled = false;
+            btnL2.Enabled = false;
+            btnL3.Enabled = false;
+            btnC1.Enabled = false;
+            btnC2.Enabled = false;
+            btnC3.Enabled = false;
+            btnR1.Enabled = false;
+            btnR2.Enabled = false;
+            btnR3.Enabled = false;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("welcome to TicTacToe","Greetings Players");
         }
 
         private void button1_Click_2(object sender, EventArgs e)
